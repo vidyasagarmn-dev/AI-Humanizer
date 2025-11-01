@@ -14,7 +14,7 @@ app.use(express.json());
 app.post('/api/humanize', async (req, res) => {
     const { text } = req.body;
     // We are now using the standard Canvas API key handling
-    const apiKey = "AIzaSyCEMrBMbegeGMVD3GvhIr5AQWniNf_n4Lo"; 
+    const apiKey = "Your_api_key"; 
 
     // --- GEMINI API CONFIGURATION ---
     const model = 'gemini-2.5-flash-preview-09-2025';
@@ -70,3 +70,4 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
+
